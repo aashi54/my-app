@@ -4,7 +4,7 @@ const dotenv = require("dotenv");
 const mongoose = require("mongoose");
 const cors = require('cors');
 const bodyParser = require('body-parser');
-const PORT = process.env.PORT || 5000
+
 
 dotenv.config();
 
@@ -27,7 +27,7 @@ const loanApplicationsRouter = require('../api/routes/loanApplication');
 app.use('/api/loan-applications', loanApplicationsRouter);
 
 
-app.listen(PORT, ()=>{
+app.listen("5000", ()=>{
     console.log("Backend is running")
 });
 
